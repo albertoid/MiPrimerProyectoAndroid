@@ -11,29 +11,32 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="315dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/tBienvenido"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="124dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         android:text="@string/tBoton"
         android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
